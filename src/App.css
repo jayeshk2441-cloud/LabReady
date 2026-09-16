@@ -1134,4 +1134,1072 @@ button {
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
+}/* =========================================
+   5-MINUTE PRE-LAB PREPARATION
+========================================= */
+
+.prep-page {
+  padding-top: 35px;
+}
+
+.prep-container {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 70px 20px 80px;
+}
+
+.prep-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 35px;
+}
+
+.prep-icon {
+  font-size: 62px;
+  margin-bottom: 12px;
+}
+
+.prep-label {
+  color: #38bdf8;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.prep-header h1 {
+  margin: 0;
+  font-size: clamp(38px, 6vw, 60px);
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+.prep-header p {
+  max-width: 700px;
+  margin: 18px auto 0;
+  color: #cbd5e1;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* TIMER */
+
+.prep-timer {
+  width: 270px;
+  margin: 30px auto 45px;
+  padding: 24px 25px;
+
+  text-align: center;
+
+  border: 1px solid #334155;
+  border-radius: 18px;
+
+  background: #151c2e;
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+.timer-label {
+  color: #38bdf8;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.timer-value {
+  margin-top: 9px;
+
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 52px;
+  font-weight: 800;
+
+  color: #f8fafc;
+
+  letter-spacing: 2px;
+}
+
+.timer-status {
+  margin-top: 7px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.timer-complete {
+  border-color: #22c55e;
+  background: #082d1a;
+}
+
+.timer-complete .timer-label {
+  color: #4ade80;
+}
+
+.timer-complete .timer-value {
+  color: #86efac;
+}
+
+/* PREP CARDS */
+
+.prep-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.prep-card {
+  display: flex;
+  gap: 20px;
+
+  min-height: 210px;
+
+  padding: 25px;
+
+  border: 1px solid #334155;
+  border-radius: 16px;
+
+  background: #151c2e;
+
+  transition: 0.2s ease;
+}
+
+.prep-card:hover {
+  border-color: #38bdf8;
+  transform: translateY(-2px);
+}
+
+.prep-card-wide {
+  grid-column: 1 / -1;
+}
+
+.prep-card-number {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #38bdf8;
+  color: #082f49;
+
+  font-weight: 800;
+}
+
+.prep-card-content {
+  flex: 1;
+}
+
+.prep-card-content h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.prep-card-content p {
+  margin: 0;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.code-example {
+  margin-top: 16px;
+  padding: 13px 15px;
+
+  border-radius: 9px;
+
+  background: #050816;
+
+  color: #a5f3fc;
+
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.operator-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.operator-row span {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #475569;
+  border-radius: 8px;
+
+  background: #0f172a;
+
+  color: #7dd3fc;
+
+  font-weight: 800;
+}
+
+.mistake-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 16px;
+}
+
+.mistake-list span {
+  padding: 8px 10px;
+
+  border-radius: 7px;
+
+  background: #0f172a;
+
+  color: #86efac;
+
+  font-size: 13px;
+}
+
+.review-points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9px;
+
+  margin-top: 15px;
+
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* PREP ACTIONS */
+
+.prep-actions {
+  margin-top: 35px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 13px;
+
+  text-align: center;
+}
+
+.demo-button {
+  border: 1px solid #475569;
+
+  border-radius: 9px;
+
+  padding: 10px 17px;
+
+  background: transparent;
+  color: #94a3b8;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.demo-button:hover {
+  border-color: #f59e0b;
+  color: #fbbf24;
+  background: #21180a;
+}
+
+.waiting-message {
+  width: min(700px, 100%);
+
+  padding: 20px;
+
+  border: 1px solid #334155;
+  border-radius: 12px;
+
+  background: #151c2e;
+
+  color: #cbd5e1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.waiting-message strong {
+  color: #7dd3fc;
+}
+
+.ready-button {
+  min-width: 260px;
+}
+
+@media (max-width: 800px) {
+  .prep-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prep-card-wide {
+    grid-column: auto;
+  }
+
+  .review-points {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .prep-container {
+    padding: 70px 12px 60px;
+  }
+
+  .prep-card {
+    flex-direction: column;
+  }
+
+  .prep-card-number {
+    width: 45px;
+    height: 45px;
+  }
+
+  .timer-value {
+    font-size: 44px;
+  }
+}/* =========================================
+   DYNAMIC EXPERIMENT GRID FIX
+========================================= */
+
+.experiment-screen {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.experiment-grid {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.experiment-card {
+  width: 100%;
+  min-width: 0;
+}
+
+.experiment-card h2,
+.experiment-card p {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 800px) {
+  .experiment-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}/* =========================================
+   PYTHON LAB OBJECTIVE
+========================================= */
+
+.lab-objective {
+  width: min(1100px, 100%);
+  margin: 0 auto 25px;
+  padding: 28px;
+
+  border: 1px solid #334155;
+  border-radius: 17px;
+
+  background: #151c2e;
+}
+
+.objective-label {
+  color: #38bdf8;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.lab-objective h2 {
+  margin: 10px 0 22px;
+  font-size: 25px;
+}
+
+.objective-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.objective-steps div {
+  padding: 14px;
+
+  border: 1px solid #334155;
+  border-radius: 10px;
+
+  background: #0f172a;
+
+  color: #cbd5e1;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.objective-steps span {
+  display: block;
+  margin-bottom: 5px;
+
+  color: #67d3ff;
+  font-weight: 800;
+}
+
+/* Python lab layout */
+
+.lab-header {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+
+  text-align: center;
+  padding: 75px 10px 40px;
+}
+
+.lab-header .large-icon {
+  margin-bottom: 10px;
+}
+
+.lab-header h1 {
+  margin: 0;
+  font-size: clamp(40px, 6vw, 62px);
+}
+
+.lab-header p {
+  max-width: 750px;
+  margin: 18px auto 0;
+
+  color: #cbd5e1;
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .objective-steps {
+    grid-template-columns: 1fr;
+  }
+}/* =========================================
+   30-SECOND PREPARATION SKIP
+========================================= */
+
+.prep-control-row {
+  width: min(850px, 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+}
+
+.skip-button {
+  flex-shrink: 0;
+
+  padding: 12px 20px;
+
+  border: 1px solid #475569;
+  border-radius: 10px;
+
+  background: #151c2e;
+  color: #cbd5e1;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.skip-button:hover {
+  border-color: #f59e0b;
+  background: #211a0c;
+  color: #fbbf24;
+
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .prep-control-row {
+    flex-direction: column;
+  }
+
+  .skip-button {
+    width: 100%;
+    max-width: 260px;
+  }
+}/* =========================================
+   PYTHON LAB - FINAL LAYOUT FIX
+========================================= */
+
+.lab-header,
+.lab-objective,
+.code-section,
+.result-box,
+.learning-section {
+  width: min(1100px, calc(100% - 40px));
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lab-header {
+  padding: 90px 20px 35px;
+  text-align: center;
+}
+
+.lab-header h1 {
+  margin: 0;
+  font-size: clamp(42px, 6vw, 64px);
+  line-height: 1.08;
+  letter-spacing: -2px;
+}
+
+.lab-header p {
+  max-width: 760px;
+  margin: 18px auto 0;
+  color: #cbd5e1;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.lab-objective {
+  margin-bottom: 25px;
+}
+
+.code-section {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.code-editor {
+  display: block;
+  width: 100%;
+  min-height: 420px;
+  resize: vertical;
+
+  box-sizing: border-box;
+
+  padding: 25px;
+
+  border: none;
+  outline: none;
+
+  background: #050816;
+  color: #e2e8f0;
+
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.code-title {
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 16px 20px;
+
+  border-radius: 16px 16px 0 0;
+
+  background: #1b2438;
+  color: #f8fafc;
+}
+
+.button-row {
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  padding: 18px;
+
+  border-radius: 0 0 16px 16px;
+
+  background: #151c2e;
+}
+
+.result-box {
+  margin-bottom: 35px;
+}
+
+.learning-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+
+  padding: 25px 0 80px;
+}
+
+.learning-section > h2 {
+  grid-column: 1 / -1;
+
+  margin: 0 0 10px;
+
+  font-size: 30px;
+}
+
+.learning-card {
+  width: 100%;
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 20px;
+
+  padding: 25px;
+
+  border: 1px solid #334155;
+  border-radius: 16px;
+
+  background: #151c2e;
+}
+
+.learning-card .number {
+  width: 54px;
+  height: 54px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #5bb9ef;
+  color: #082f49;
+
+  font-weight: 800;
+}
+
+.learning-card h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.learning-card p {
+  margin: 0;
+
+  color: #cbd5e1;
+
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .learning-section {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-section > h2 {
+    grid-column: auto;
+  }
+
+  .code-editor {
+    min-height: 350px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  .lab-header,
+  .lab-objective,
+  .code-section,
+  .result-box,
+  .learning-section {
+    width: calc(100% - 24px);
+  }
+
+  .button-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button-row button {
+    width: 100%;
+  }
+
+  .learning-card {
+    padding: 20px;
+  }
+}/* =========================================
+   PYTHON LAB - STACK ALL SECTIONS PROPERLY
+========================================= */
+
+/* Keep the Python lab content vertical instead of side-by-side */
+.labready-page:has(.lab-header) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Keep every lab section in normal document flow */
+.labready-page:has(.lab-header) .lab-header,
+.labready-page:has(.lab-header) .lab-objective,
+.labready-page:has(.lab-header) .code-section,
+.labready-page:has(.lab-header) .result-box,
+.labready-page:has(.lab-header) .learning-section {
+  flex: none;
+  float: none;
+  position: static;
+}
+
+/* Header */
+.labready-page:has(.lab-header) .lab-header {
+  width: min(1100px, calc(100% - 40px));
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px 35px;
+  text-align: center;
+}
+
+/* Objective */
+.labready-page:has(.lab-header) .lab-objective {
+  width: min(1100px, calc(100% - 40px));
+  max-width: 1100px;
+  margin: 0 auto 25px;
+}
+
+/* Code editor */
+.labready-page:has(.lab-header) .code-section {
+  width: min(1100px, calc(100% - 40px));
+  max-width: 1100px;
+  margin: 0 auto 30px;
+}
+
+/* Result */
+.labready-page:has(.lab-header) .result-box {
+  width: min(1100px, calc(100% - 40px));
+  max-width: 1100px;
+  margin: 0 auto 30px;
+}
+
+/* Learning section */
+.labready-page:has(.lab-header) .learning-section {
+  width: min(1100px, calc(100% - 40px));
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+
+  padding: 20px 0 80px;
+}
+
+.labready-page:has(.lab-header) .learning-section > h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+/* Code editor */
+.labready-page:has(.lab-header) .code-editor {
+  width: 100%;
+  min-height: 420px;
+}
+
+/* Objective steps */
+.labready-page:has(.lab-header) .objective-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .labready-page:has(.lab-header) .objective-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .labready-page:has(.lab-header) .learning-section {
+    grid-template-columns: 1fr;
+  }
+}/* =========================================
+   PYTHON LAB + QUIZ THEME BUTTON FIX
+========================================= */
+
+/* All main action buttons */
+.primary-button,
+.secondary-button,
+.home-link {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Main blue button */
+.primary-button {
+  border: none;
+
+  padding: 14px 26px;
+
+  background: #5bb9ef;
+  color: #082f49;
+
+  font-size: 17px;
+
+  box-shadow: 0 8px 22px rgba(56, 189, 248, 0.12);
+}
+
+.primary-button:hover {
+  background: #70c6f5;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(56, 189, 248, 0.2);
+}
+
+.primary-button:active {
+  transform: translateY(0);
+}
+
+.primary-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Secondary Reset button */
+.secondary-button {
+  padding: 14px 24px;
+
+  border: 1px solid #475569;
+
+  background: #151c2e;
+  color: #cbd5e1;
+
+  font-size: 16px;
+}
+
+.secondary-button:hover {
+  background: #1e293b;
+  border-color: #5bb9ef;
+  color: #f8fafc;
+  transform: translateY(-2px);
+}
+
+/* Code editor button row */
+.button-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px;
+
+  background: #151c2e;
+
+  border-radius: 0 0 16px 16px;
+}
+
+/* =========================================
+   QUIZ SCORE PANEL
+========================================= */
+
+.score-panel {
+  width: min(800px, calc(100% - 30px));
+
+  margin: 35px auto 60px;
+  padding: 38px 30px;
+
+  text-align: center;
+
+  border: 1px solid #334155;
+  border-radius: 18px;
+
+  background: #151c2e;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+.score-panel h2 {
+  margin: 0;
+
+  color: #f8fafc;
+
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.score-panel p {
+  margin: 16px 0 25px;
+
+  color: #cbd5e1;
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.score-panel .primary-button {
+  margin-top: 5px;
+}
+
+/* Continue link/button */
+.home-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 15px;
+  padding: 13px 24px;
+
+  border: 1px solid #3b82f6;
+
+  background: #17243a;
+  color: #7dd3fc;
+
+  font-size: 16px;
+
+  text-decoration: none;
+}
+
+.home-link:hover {
+  background: #1e3352;
+  border-color: #60a5fa;
+  color: #bae6fd;
+
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   QUIZ CHECK BUTTON
+========================================= */
+
+.quiz-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 260px;
+  min-height: 56px;
+
+  margin: 35px auto 45px;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .button-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button-row button {
+    width: 100%;
+  }
+
+  .score-panel {
+    width: calc(100% - 24px);
+    padding: 30px 20px;
+  }
+
+  .score-panel h2 {
+    font-size: 30px;
+  }
+
+  .score-panel p {
+    font-size: 16px;
+  }
+
+  .score-panel .primary-button,
+  .home-link {
+    width: 100%;
+  }
+}/* =========================================
+   GENERIC PYTHON RUNNER
+========================================= */
+
+.input-section {
+  padding: 20px;
+
+  background: #151c2e;
+
+  border-top: 1px solid #334155;
+}
+
+.input-section label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #7dd3fc;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.program-input {
+  width: 100%;
+  min-height: 90px;
+
+  box-sizing: border-box;
+
+  padding: 14px;
+
+  border: 1px solid #334155;
+  border-radius: 10px;
+
+  outline: none;
+
+  resize: vertical;
+
+  background: #050816;
+  color: #e2e8f0;
+
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.program-input:focus {
+  border-color: #5bb9ef;
+}
+
+.program-output {
+  margin: 20px 0 0;
+
+  padding: 18px;
+
+  border-radius: 10px;
+
+  background: #050816;
+
+  color: #e2e8f0;
+
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 15px;
+
+  line-height: 1.6;
+
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+.result-error .program-output {
+  color: #fecaca;
+}
+
+.result-success .program-output {
+  color: #bbf7d0;
 }
